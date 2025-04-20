@@ -12,3 +12,18 @@ window.onload = function () {
             });
     }
 };
+function displayMovieDetails(movie) {
+    const detailsDiv = document.getElementById('movieDetails');
+
+    detailsDiv.innerHTML = `
+        <h2 class="box">${movie.Title} (${movie.Year})</h2>
+        <div class="box">
+            <img src="${movie.Poster}" alt="${movie.Title}">
+        </div>
+        <p class="box"><b>Genre:</b> ${movie.Genre}</p>
+        <p class="box"><b>Plot:</b> ${movie.Plot}</p>
+        <p class="box"><b>Director:</b> ${movie.Director}</p>
+        <p class="box"><b>Actors:</b> ${movie.Actors}</p>
+        <p class="box"><b>IMDB Rating:</b> ${movie.imdbRating}</p>
+    `;
+}
