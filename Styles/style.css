@@ -1,0 +1,34 @@
+/*CSS Reset*/
+/*Removes default margin/padding and uses border-box sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Base Styles*/
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9; /*Light background*/
+    color: #222; /*Dark text*/
+    padding: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease; /*Smooth transition for dark mode*/
+    overflow-x: hidden; /*Prevent horizontal scroll*/
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    text-align: center;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
