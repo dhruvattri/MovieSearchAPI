@@ -32,3 +32,26 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+/*Dark Mode*/
+body.dark {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+body.dark input,
+body.dark button {
+    background-color: #333;
+    color: #f0f0f0;
+    border: 1px solid #888;
+}
+
+body.dark #movieDetails {
+    background-color: #1e1e1e;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+body.dark .box {
+    background-color: #1e1e1e;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
