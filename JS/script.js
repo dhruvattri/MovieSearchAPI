@@ -1,6 +1,7 @@
 // Setting OMDb API key
 const apiKey = 'dcc707b6';
 function searchMovies() {
+    console.log("Search clicked!");
     const query = document.getElementById('searchInput').value;
     const url = `https://www.omdbapi.com/?s=${query}&apikey=${apiKey}`;
 
