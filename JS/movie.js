@@ -1,3 +1,10 @@
+/*
+Name: Dhruv Dhruv  
+Student Number: 200556510  
+Course: Client-Side JavaScript-03  
+Assignment03: Movie Search API  
+*/
+
 // Setting OMDb API key
 const apiKey = 'dcc707b6';
 
@@ -106,3 +113,14 @@ window.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('theme', currentTheme);
     });
 });
+
+/* References & Resources:
+- OMDb API: https://www.omdbapi.com/
+- YouTube Data API v3: https://developers.google.com/youtube/v3/getting-started
+- Used somethings which were needed and was learnt from:
+  https://www.w3schools.com/
+  https://www.w3schools.com/tags/tag_iframe.ASP
+  https://developer.mozilla.org/en-US/docs/Web
+  https://www.geeksforgeeks.org/node-js-urlsearchparams-api/
+  https://www.w3schools.com/jsref/jsref_encodeuricomponent.asp
+*/

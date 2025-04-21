@@ -1,3 +1,10 @@
+/*
+Name: Dhruv Dhruv  
+Student Number: 200556510  
+Course: Client-Side JavaScript-03  
+Assignment03: Movie Search API  
+*/
+
 // Setting OMDb API key
 const apiKey = 'dcc707b6';
 
