@@ -28,3 +28,9 @@ function displayMovieDetails(movie) {
         <p class="box"><b>IMDB Rating:</b> ${movie.imdbRating}</p>
     `;
 }
+window.addEventListener('DOMContentLoaded', () => {
+    const themeToggle = document.getElementById('themeToggle');
+    themeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark');
+    });
+});
