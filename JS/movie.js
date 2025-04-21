@@ -9,7 +9,6 @@ window.onload = function () {
         fetch(`https://www.omdbapi.com/?i=${imdbID}&apikey=${apiKey}`)
             .then(res => res.json())
             .then(data => {
-                console.log(data); // testing output
                 displayMovieDetails(data);
             });
     }
@@ -31,7 +30,32 @@ function displayMovieDetails(movie) {
     `;
 }
 function fetchYouTubeTrailer(title) {
-    console.log("Fetching trailer for: ", title); // debug stub
+    const searchQuery = encodeURIComponent(`${title} trailer`);
+    const youtubeURL = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=${searchQuery}&key=${youtubeApiKey}&type=video`;
+
+    fetch(youtubeURL)
+        .then(res => res.json())
+        .then(data => {
+            const videoId = data.items[0]?.id?.videoId;
+            const trailerDiv = document.getElementById('trailerContainer');
+
+            if (videoId) {
+                trailerDiv.innerHTML = `
+                    <h3>Watch Trailer</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/${videoId}"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                `;
+            } else {
+                trailerDiv.innerHTML = "<p>No trailer found.</p>";
+            }
+        })
+        .catch(() => {
+            document.getElementById('trailerContainer').innerHTML = "<p>Failed to load trailer.</p>";
+        });
 }
 
 window.addEventListener('DOMContentLoaded', () => {
