@@ -26,8 +26,13 @@ function displayMovieDetails(movie) {
         <div class="box"><p><b>Director:</b> ${movie.Director}</p></div>
         <div class="box"><p><b>Actors:</b> ${movie.Actors}</p></div>
         <div class="box"><p><b>IMDB Rating:</b> ${movie.imdbRating}</p></div>
+        <div id="trailerContainer"><h3>Loading trailer...</h3></div>
     `;
 }
+function fetchYouTubeTrailer(title) {
+    console.log("Fetching trailer for: ", title); // debug stub
+}
+
 window.addEventListener('DOMContentLoaded', () => {
     const themeToggle = document.getElementById('themeToggle');
     themeToggle.addEventListener('click', () => {
