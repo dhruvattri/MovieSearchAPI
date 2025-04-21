@@ -9,11 +9,15 @@
 /*Base Styles*/
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f9f9f9; /*Light background*/
-    color: #222; /*Dark text*/
+    background-color: #f9f9f9;
+    /*Light background*/
+    color: #222;
+    /*Dark text*/
     padding: 20px;
-    transition: background-color 0.3s ease, color 0.3s ease; /*Smooth transition for dark mode*/
-    overflow-x: hidden; /*Prevent horizontal scroll*/
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /*Smooth transition for dark mode*/
+    overflow-x: hidden;
+    /*Prevent horizontal scroll*/
 }
 
 /*h1 styling*/
@@ -118,13 +122,14 @@ body.dark .box {
 #results img:hover {
     transform: scale(1.05);
 }
+
 /*movie details styles*/
 #movieDetails {
     margin-top: 20px;
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 100%;
     word-wrap: break-word;
     overflow-wrap: break-word;
