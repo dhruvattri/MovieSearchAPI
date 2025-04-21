@@ -55,3 +55,21 @@ body.dark .box {
     background-color: #1e1e1e;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
 }
+
+#results {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#results img {
+    height: 200px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+#results img:hover {
+    transform: scale(1.05);
+}
