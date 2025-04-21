@@ -101,3 +101,18 @@ body.dark .box {
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+#trailerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#trailerContainer iframe {
+    width: 100%;
+    max-width: 560px;
+    aspect-ratio: 16 / 9;
+    border: none;
+    border-radius: 10px;
+}
