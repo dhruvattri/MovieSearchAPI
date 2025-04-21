@@ -93,7 +93,16 @@ function fetchYouTubeTrailer(title) {
 // Toggle between dark/light themes
 window.addEventListener('DOMContentLoaded', () => {
     const themeToggle = document.getElementById('themeToggle');
+
+    // Check localStorage for saved theme and apply it
+    if (localStorage.getItem('theme') === 'dark') {
+        document.body.classList.add('dark');
+    }
+
+    // Toggle theme and update localStorage
     themeToggle.addEventListener('click', () => {
         document.body.classList.toggle('dark');
+        const currentTheme = document.body.classList.contains('dark') ? 'dark' : 'light';
+        localStorage.setItem('theme', currentTheme);
     });
 });

@@ -54,12 +54,18 @@ function searchMovies() {
 
 // Wait until HTML is fully loaded before attaching events
 window.addEventListener('DOMContentLoaded', () => {
-    // Get the theme toggle button
     const themeToggle = document.getElementById('themeToggle');
 
-    // Toggle between light and dark themes
+    // Check localStorage for saved theme and apply it
+    if (localStorage.getItem('theme') === 'dark') {
+        document.body.classList.add('dark');
+    }
+
+    // Toggle theme and update localStorage
     themeToggle.addEventListener('click', () => {
         document.body.classList.toggle('dark');
+        const currentTheme = document.body.classList.contains('dark') ? 'dark' : 'light';
+        localStorage.setItem('theme', currentTheme);
     });
 
     // Allow pressing Enter to trigger the search

@@ -14,13 +14,18 @@
 </head>
 <!-- Page content starts -->
 <body>
-    <!-- Main header title -->
-    <h1>OMDb Movies</h1>
+    <!-- Shared Header -->
+    <header class="main-header">
+        <h1>OMDb Movie Explorer</h1>
+        <button id="themeToggle">🌓 Toggle Theme</button>
+    </header>
 
     <!-- Container for the search input and button -->
     <div class="search-container">
-        <!-- Input field for typing the movie search -->
+
+         <!-- Input field for typing the movie search -->
         <input type="text" id="searchInput" placeholder="Search for movies...">
+        
         <!-- Search button triggers movie search function -->
         <button onclick="searchMovies()">🔎Search</button>
     </div>
@@ -28,8 +33,10 @@
     <!-- This div will contain the search results -->
     <div id="results"></div>
 
-    <!-- Button to toggle dark/light mode -->
-    <button id="themeToggle">🌓 Toggle Theme</button>
+    <!-- Shared Footer -->
+    <footer class="main-footer">
+        <p>© 2025 Dhruv. All rights reserved.</p>
+    </footer>
 
     <!-- Linking external JavaScript for functionality -->
     <script src="./JS/script.js"></script>
