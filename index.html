@@ -1,20 +1,38 @@
+<!-- HTML document declaration -->
 <!DOCTYPE html>
+<!-- Start of HTML document -->
 <html lang="en">
+<!-- Document metadata section -->
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 charset=UTF-8">
+    <!-- Viewport settings for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <!-- Page title shown on browser tab -->
     <title>OMDb Movie Explorer</title>
+    <!-- Linking to external CSS stylesheet -->
     <link rel="stylesheet" href="./Styles/style.css">
     <link rel="icon" href="favicon.ico" type="x-icon">
 </head>
+<!-- Page content starts -->
 <body>
+    <!-- Main header title -->
     <h1>OMDb Movies</h1>
+
+    <!-- Container for the search input and button -->
     <div class="search-container">
-    <input type="text" id="searchInput" placeholder="Search for movies...">
-    <button onclick="searchMovies()">🔎Search</button>
+        <!-- Input field for typing the movie search -->
+        <input type="text" id="searchInput" placeholder="Search for movies...">
+        <!-- Search button triggers movie search function -->
+        <button onclick="searchMovies()">🔎Search</button>
     </div>
+
+    <!-- This div will contain the search results -->
     <div id="results"></div>
+
+    <!-- Button to toggle dark/light mode -->
     <button id="themeToggle">🌓 Toggle Theme</button>
 
+    <!-- Linking external JavaScript for functionality -->
     <script src="./JS/script.js"></script>
 </body>
+<!-- End of HTML document -->
 </html>

@@ -16,6 +16,7 @@ body {
     overflow-x: hidden; /*Prevent horizontal scroll*/
 }
 
+/*h1 styling*/
 h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
@@ -23,12 +24,14 @@ h1 {
     text-align: center;
 }
 
+/*anchor tag style*/
 a {
     color: #3498db;
     text-decoration: none;
     font-weight: bold;
 }
 
+/*anchor hover*/
 a:hover {
     text-decoration: underline;
 }
@@ -64,6 +67,7 @@ button {
     transition: background-color 0.3s ease;
 }
 
+/*Button hover*/
 button:hover {
     background-color: #2980b9;
 }
@@ -74,6 +78,7 @@ body.dark {
     color: #f0f0f0;
 }
 
+/*dark mode style for body*/
 body.dark input,
 body.dark button {
     background-color: #333;
@@ -81,15 +86,18 @@ body.dark button {
     border: 1px solid #888;
 }
 
+/*dark mode style for movie details*/
 body.dark #movieDetails {
     background-color: #1e1e1e;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
 }
 
+/*body dark mode*/
 body.dark .box {
     background-color: #1e1e1e;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
 }
+
 
 #results {
     display: flex;
@@ -99,16 +107,18 @@ body.dark .box {
     margin-top: 20px;
 }
 
+/*results container style*/
 #results img {
     height: 200px;
     border-radius: 10px;
     transition: transform 0.3s ease;
 }
 
+/*hover for results*/
 #results img:hover {
     transform: scale(1.05);
 }
-
+/*movie details styles*/
 #movieDetails {
     margin-top: 20px;
     background-color: #fff;
@@ -120,6 +130,7 @@ body.dark .box {
     overflow-wrap: break-word;
 }
 
+/*box elements style*/
 .box {
     display: flex;
     flex-direction: column;
@@ -137,6 +148,7 @@ body.dark .box {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/*movie trailer styles*/
 #trailerContainer {
     display: flex;
     flex-direction: column;
@@ -144,6 +156,7 @@ body.dark .box {
     margin-top: 20px;
 }
 
+/*trailer iframe styles*/
 #trailerContainer iframe {
     width: 100%;
     max-width: 560px;
