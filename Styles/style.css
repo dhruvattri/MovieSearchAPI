@@ -33,6 +33,41 @@ a:hover {
     text-decoration: underline;
 }
 
+/*Search Input and Button*/
+input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    max-width: 100%;
+}
+
+/*Container for search bar*/
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/*General button styling*/
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
 /*Dark Mode*/
 body.dark {
     background-color: #121212;
