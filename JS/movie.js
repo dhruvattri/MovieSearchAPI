@@ -10,6 +10,7 @@ window.onload = function () {
             .then(res => res.json())
             .then(data => {
                 displayMovieDetails(data);
+                fetchYouTubeTrailer(data.Title);
             });
     }
 };
