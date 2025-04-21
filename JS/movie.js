@@ -9,6 +9,7 @@ window.onload = function () {
             .then(res => res.json())
             .then(data => {
                 console.log(data); // testing output
+                displayMovieDetails(data);
             });
     }
 };
