@@ -73,3 +73,10 @@ body.dark .box {
 #results img:hover {
     transform: scale(1.05);
 }
+
+#movieDetails {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
