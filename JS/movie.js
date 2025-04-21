@@ -1,4 +1,5 @@
 const apiKey = 'dcc707b6';
+const youtubeApiKey = 'AIzaSyA4WLwQkn5sTKRvzh00yBmU_wzNaY4UpRQ';
 
 window.onload = function () {
     const urlParams = new URLSearchParams(window.location.search);
