@@ -12,8 +12,12 @@ function searchMovies() {
             resDiv.innerHTML = ''; // clear previous results
 
             if (data.Response === 'True') {
-                // TODO: loop through movies and display posters
-
+                data.Search.forEach(movie => {
+                    const link = document.createElement('a');
+                    link.href = `movie.html?imdbID=${movie.imdbID}`;
+                    link.innerHTML = `<img src="${movie.Poster}" alt="${movie.Title}" title="${movie.Title}" />`;
+                    resDiv.appendChild(link);
+                });
             } else {
                 resDiv.innerHTML = 'No movies found.';
             }
