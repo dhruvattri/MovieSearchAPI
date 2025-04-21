@@ -75,3 +75,15 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+
+/* References & Resources:
+- OMDb API: https://www.omdbapi.com/
+- YouTube Data API v3: https://developers.google.com/youtube/v3/getting-started
+- Used somethings which were needed and was learnt from:
+  https://www.w3schools.com/
+  https://www.w3schools.com/tags/tag_iframe.ASP
+  https://developer.mozilla.org/en-US/docs/Web
+  https://www.geeksforgeeks.org/node-js-urlsearchparams-api/
+  https://www.w3schools.com/jsref/jsref_encodeuricomponent.asp
+*/
