@@ -80,3 +80,15 @@ body.dark .box {
     padding: 20px;
     border-radius: 10px;
 }
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 100%;
+}
