@@ -21,11 +21,11 @@ function displayMovieDetails(movie) {
         <div class="box">
             <img src="${movie.Poster !== 'N/A' ? movie.Poster : 'placeholder.jpg'}" alt="${movie.Title}">
         </div>
-        <p class="box"><b>Genre:</b> ${movie.Genre}</p>
-        <p class="box"><b>Plot:</b> ${movie.Plot}</p>
-        <p class="box"><b>Director:</b> ${movie.Director}</p>
-        <p class="box"><b>Actors:</b> ${movie.Actors}</p>
-        <p class="box"><b>IMDB Rating:</b> ${movie.imdbRating}</p>
+        <div class="box"><p><b>Genre:</b> ${movie.Genre}</p></div>
+        <div class="box"><p><b>Plot:</b> ${movie.Plot}</p></div>
+        <div class="box"><p><b>Director:</b> ${movie.Director}</p></div>
+        <div class="box"><p><b>Actors:</b> ${movie.Actors}</p></div>
+        <div class="box"><p><b>IMDB Rating:</b> ${movie.imdbRating}</p></div>
     `;
 }
 window.addEventListener('DOMContentLoaded', () => {
