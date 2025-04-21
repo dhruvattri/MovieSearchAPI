@@ -19,7 +19,7 @@ function displayMovieDetails(movie) {
     detailsDiv.innerHTML = `
         <h2 class="box">${movie.Title} (${movie.Year})</h2>
         <div class="box">
-            <img src="${movie.Poster}" alt="${movie.Title}">
+            <img src="${movie.Poster !== 'N/A' ? movie.Poster : 'placeholder.jpg'}" alt="${movie.Title}">
         </div>
         <p class="box"><b>Genre:</b> ${movie.Genre}</p>
         <p class="box"><b>Plot:</b> ${movie.Plot}</p>
