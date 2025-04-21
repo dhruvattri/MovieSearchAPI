@@ -9,7 +9,7 @@
 
 </div>
 
-**For this project, I developed a responsive movie search web application by integrating two well-documented APIs:
+**For this Assignment, I developed a responsive movie search web application by integrating two well-documented APIs:
 the OMDb API and the YouTube Data API v3.
 The application allows users to search for movies by title, view corresponding posters and detailed metadata
 and watch trailers retrieved from YouTube.
