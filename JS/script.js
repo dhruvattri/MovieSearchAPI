@@ -32,7 +32,6 @@ function searchMovies() {
                     // Create a clickable link to movie.html with the IMDb ID
                     const link = document.createElement('a');
                     link.href = `movie.html?imdbID=${movie.imdbID}`;
-                    link.target = '_blank'; // open in new tab
 
                     // Add the movie poster inside the link
                     link.innerHTML = `<img src="${movie.Poster !== 'N/A' ? movie.Poster : 'placeholder.jpg'}"
